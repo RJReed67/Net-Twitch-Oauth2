@@ -16,7 +16,7 @@ Net::Twitch::Oauth2 - a simple Perl wrapper around Twitch OAuth v2.0 protocol
     );
      
     ###get authorization URL for your application
-    my $url = $fb->get_authorization_url(
+    my $url = $twitch->get_authorization_url(
         scope => ['user_read'],
     );
      
@@ -38,7 +38,7 @@ Net::Twitch::Oauth2 - a simple Perl wrapper around Twitch OAuth v2.0 protocol
     ###save this token in database or session
      
     ##later on your application you can use this verifier code to comunicate
-    ##with facebook on behalf of this user
+    ##with twitch on behalf of this user
      
     my $twitch = Net::Twitch::Oauth2->new(
         access_token => $access_token
