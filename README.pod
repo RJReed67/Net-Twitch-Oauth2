@@ -12,7 +12,7 @@ Net::Twitch::Oauth2 - a simple Perl wrapper around Twitch OAuth v2.0 protocol
     my $twitch = Net::Twitch::Oauth2->new(
         application_id => 'your_application_id', 
         application_secret => 'your_application_secret',
-        callback => 'http://yourdomain.com/facebook/callback'
+        callback => 'http://yourdomain.com/twitch/callback'
     );
      
     ###get authorization URL for your application
@@ -31,7 +31,7 @@ Net::Twitch::Oauth2 - a simple Perl wrapper around Twitch OAuth v2.0 protocol
     my $twitch = Net::Twitch::Oauth2->new(
         application_id => 'your_application_id',
         application_secret => 'your_application_secret',
-        callback => 'http://yourdomain.com/facebook/callback'
+        callback => 'http://yourdomain.com/twitch/callback'
     );
      
     my $access_token = $twitch->post_access_token(code => $cgi->param('code'));
