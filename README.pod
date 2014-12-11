@@ -83,7 +83,7 @@ when you register your application
  
 =back
  
-=head2 C<$fb-E<gt>get_authorization_url( %args )>
+=head2 C<$twitch-E<gt>get_authorization_url( %args )>
  
 Return an Authorization URL for your application, once you receive this
 URL redirect user there in order to authorize your application
@@ -107,7 +107,7 @@ your application
  
 =back
  
-=head2 C<$fb-E<gt>post_access_token( %args )>
+=head2 C<$twitch-E<gt>post_access_token( %args )>
  
 Returns access_token string
 One arg to pass
@@ -130,7 +130,7 @@ place in order to use it later in your application
  
 =back
  
-=head2 C<$fb-E<gt>get( $url,$args )>
+=head2 C<$twitch-E<gt>get( $url,$args )>
  
 Send get request to twitch and returns response back from twitch
  
@@ -163,7 +163,7 @@ Returns response as perl hashref
 For more information about twitch API, please check
 http://dev.twitch.tv
  
-=head2 C<$fb-E<gt>post( $url,$args )>
+=head2 C<$twitch-E<gt>post( $url,$args )>
  
 Send post request to twitch API, usually to post something
  
