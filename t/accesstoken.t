@@ -33,22 +33,22 @@ my $app = sub {
 test_tcp(
     client => sub {
         my $port = shift;
-        my $fb = Net::Twitch::Oauth2->new(
+        my $twitch = Net::Twitch::Oauth2->new(
             application_id => 'your_application_id',
             application_secret => 'your_application_secret',
             callback => 'http://your-domain.com/callback',
             access_token => 'AccessToken',
         );
         my $url = "http://127.0.0.1:$port";
-        $fb->post($url, { message => 'Post request without access token' });
-        $fb->post("$url?access_token=OtherToken", { message => 'Post request with access token' });
-        $fb->get($url, { message => 'Get request without access token' });
-        $fb->get("$url?access_token=OtherToken", { message => 'Get request with access token' });
+        $twitch->post($url, { message => 'Post request without access token' });
+        $twitch->post("$url?access_token=OtherToken", { message => 'Post request with access token' });
+        $twitch->get($url, { message => 'Get request without access token' });
+        $twitch->get("$url?access_token=OtherToken", { message => 'Get request with access token' });
         
         ##new bug tests -- adding query to another query ?limit=100?access_token
-        $fb->get("$url?limit=1000", { message => 'Get request with already set query' });
-        $fb->get("$url", { message => 'Get request without already set query' });
-        $fb->get("$url?limit=1000&access_token=OtherToken", { message => 'Get request with token and query' });
+        $twitch->get("$url?limit=1000", { message => 'Get request with already set query' });
+        $twitch->get("$url", { message => 'Get request without already set query' });
+        $twitch->get("$url?limit=1000&access_token=OtherToken", { message => 'Get request with token and query' });
         
     },
     server => sub {
