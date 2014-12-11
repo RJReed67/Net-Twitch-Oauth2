@@ -44,7 +44,7 @@ Net::Twitch::Oauth2 - a simple Perl wrapper around Twitch OAuth v2.0 protocol
         access_token => $access_token
     );
      
-    my $info = $fb->get(
+    my $info = $twitch->get(
         'https://api.twitch.tv/kraken/user' ##Twitch API URL
     );
      
