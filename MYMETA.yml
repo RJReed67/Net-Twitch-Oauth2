@@ -1,26 +1,20 @@
 ---
-abstract: unknown
+abstract: 'Net::Twitch::Oauth2 wrapper for Twitch.tv OAuth2'
 author:
-  - 'Ronald J. Reed <rjreed@gmail.com>'
+  - 'Ronald Reed <rjreed67@gmail.com>'
 build_requires:
-  Test::Exception: '0'
-  Test::MockModule: '0'
-  Test::MockObject: '0'
-configure_requires:
-  ExtUtils::MakeMaker: '0'
+  Test::More: '0.10'
 dynamic_config: 0
-generated_by: 'ExtUtils::MakeMaker version 7.04, CPAN::Meta::Converter version 2.143240'
-license: unknown
+generated_by: 'Module::Build version 0.421, CPAN::Meta::Converter version 2.143240'
+license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: '1.4'
 name: Net-Twitch-Oauth2
-no_index:
-  directory:
-    - t
-    - inc
-requires:
-  JSON::Any: '0'
-  LWP::UserAgent: '0'
-  URI::Escape: '0'
+provides:
+  Net::Twitch::Oauth2:
+    file: lib/Net/Twitch/Oauth2.pm
+    version: '0.01'
+resources:
+  license: http://dev.perl.org/licenses/
 version: '0.01'
