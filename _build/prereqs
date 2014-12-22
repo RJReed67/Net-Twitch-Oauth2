@@ -1,12 +1,15 @@
 do{ my $x = {
-       'test_requires' => {},
        'requires' => {},
+       'conflicts' => {},
+       'test_requires' => {},
        'build_requires' => {
+                             'URI::Escape' => '0',
                              'Test::More' => '0.10',
+                             'URI' => '0',
+                             'JSON::Any' => '0',
                              'LWP::UserAgent' => '0',
-                             'JSON::Any' => '0'
+                             'Carp' => '0'
                            },
-       'recommends' => {},
-       'conflicts' => {}
+       'recommends' => {}
      };
 $x; }

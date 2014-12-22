@@ -1,5 +1,5 @@
 do{ my $x = {
-       'Net-Twitch-Oauth2-0.04' => 1,
+       'Net-Twitch-Oauth2-0.05' => 1,
        'blib' => 1
      };
 $x; }
