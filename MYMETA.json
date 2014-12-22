@@ -16,6 +16,8 @@
    "prereqs" : {
       "build" : {
          "requires" : {
+            "JSON::Any" : "0",
+            "LWP::UserAgent" : "0",
             "Test::More" : "0.10"
          }
       }
@@ -23,7 +25,7 @@
    "provides" : {
       "Net::Twitch::Oauth2" : {
          "file" : "lib/Net/Twitch/Oauth2.pm",
-         "version" : "0.01"
+         "version" : "0.03"
       }
    },
    "release_status" : "stable",
@@ -32,5 +34,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "0.01"
+   "version" : "0.03"
 }
