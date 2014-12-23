@@ -16,10 +16,17 @@
    "prereqs" : {
       "build" : {
          "requires" : {
+            "Test::Exception" : "0",
+            "Test::MockModule" : "0",
+            "Test::MockObject" : "0",
+            "Test::More" : "0.10"
+         }
+      },
+      "runtime" : {
+         "requires" : {
             "Carp" : "0",
             "JSON::Any" : "0",
             "LWP::UserAgent" : "0",
-            "Test::More" : "0.10",
             "URI" : "0",
             "URI::Escape" : "0"
          }
@@ -37,5 +44,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "0.04"
+   "version" : "0.05"
 }

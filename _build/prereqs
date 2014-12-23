@@ -1,14 +1,18 @@
 do{ my $x = {
-       'requires' => {},
+       'requires' => {
+                       'JSON::Any' => '0',
+                       'Carp' => '0',
+                       'LWP::UserAgent' => '0',
+                       'URI' => '0',
+                       'URI::Escape' => '0'
+                     },
        'conflicts' => {},
        'test_requires' => {},
        'build_requires' => {
-                             'URI::Escape' => '0',
                              'Test::More' => '0.10',
-                             'URI' => '0',
-                             'JSON::Any' => '0',
-                             'LWP::UserAgent' => '0',
-                             'Carp' => '0'
+                             'Test::MockObject' => '0',
+                             'Test::Exception' => '0',
+                             'Test::MockModule' => '0'
                            },
        'recommends' => {}
      };
